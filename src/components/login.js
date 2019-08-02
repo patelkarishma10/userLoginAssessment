@@ -23,7 +23,7 @@ export class Login extends Component {
         axios
             .get("http://localhost:5000/user/name/"+ username + "/" + password )
             .then(response => {
-                this.setState({ message:  JSON.stringify(response.data) });
+                this.setState({ message:  JSON.stringify(response.data.Status) });
                 console.log(response.data);
             })
             
@@ -47,7 +47,7 @@ export class Login extends Component {
                     <input type="submit" className="btn btn-dark" value="login" />
                 </form>
 
-                 <p style={{color: 'green'}}>{this.state.message}</p> 
+                 <p style={{color: 'red'}}>{this.state.message}</p> 
             </div>
 
         );

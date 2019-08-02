@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import { Table } from "reactstrap";
+
+import {RegisterResponse} from './registerResponse';
 
 export class Register extends Component {
 
       constructor() {
     super();
     this.state = {
-      error: ""
+        responseData: ""
+    //   username: "",
+    //   email: "",
+    //   password: "",
+    //   password2: ""
     };
   }
 
@@ -24,13 +31,25 @@ register = (e) => {
 
             .then(response => {
                 console.log(response);
-                this.setState({ error: JSON.stringify(response.data)});
+                this.setState({ 
+                    responseData: (response.data)
+                    // username: (JSON.stringify(response.data.username)),
+                    // email: (JSON.stringify(response.data.email)),
+                    // password: (JSON.stringify(response.data.password)),
+                    // passowrd2: (JSON.stringify(response.data.password2))
+                });
                 this.props.passedFunction();
             });
 
 
 }
 
+// (JSON.stringify(response.data))
+// .forEach((item) => (
+
+//                                  <p>{item}</p>       
+
+//                         ))
     render() {
 
         return (
@@ -49,16 +68,23 @@ register = (e) => {
                     <input type="text" id="password" className="form-control"/>
                     <br />
 
-                    <label htmlFor="password2" >Verify password: </label>
+                    <label htmlFor="password2" >password2: </label>
                     <input type="text" id="password2" className="form-control"/>
                     <br />
 
                     <input type="submit" className="btn btn-dark" value="register" />
                 </form>
- 
-                <p style={{color: 'red'}}>{this.state.error}</p> 
-            </div>
 
-        );
-    }
+                {/* <div style={{color: 'red'}}>{this.state.error} </div>  */}
+
+                <Table style={{color: 'red'}}>
+
+                        <RegisterResponse  responseData={this.state.responseData} />
+
+                   
+                </Table>
+        </div>
+
+    );
+}
 }
