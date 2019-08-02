@@ -23,8 +23,8 @@ export class Login extends Component {
         axios
             .get("http://localhost:5000/user/name/"+ username + "/" + password )
             .then(response => {
-                // this.setState({ message: "Successful login" });
-                console.log(response);
+                this.setState({ message:  JSON.stringify(response.data) });
+                console.log(response.data);
             })
             
     }

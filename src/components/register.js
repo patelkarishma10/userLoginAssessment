@@ -18,19 +18,17 @@ register = (e) => {
         password: e.target[2].value,
         password2: e.target[3].value
     }
-    if (newItem.username === "" || newItem.email === "" || newItem.password === "" || newItem.password2 === "") {
-        this.setState({ error: "Please fill all fields" })
-    } else {
+
         axios
             .post("http://localhost:5000/user/createUser", newItem)
 
             .then(response => {
                 console.log(response);
-                this.setState({ error: "Successfully registered" });
+                this.setState({ error: JSON.stringify(response.data)});
                 this.props.passedFunction();
             });
 
-    }
+
 }
 
     render() {
