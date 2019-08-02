@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot register 1`] = `
+<div>
+  <ul
+    className="navBar"
+  >
+    <li
+      id="Register"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Register
+      </a>
+    </li>
+    <li
+      id="Login"
+    >
+      <a
+        href="/login"
+        onClick={[Function]}
+      >
+        Login
+      </a>
+    </li>
+    <li
+      id="See all Users"
+    >
+      <a
+        href="/userList"
+        onClick={[Function]}
+      >
+        See all users
+      </a>
+    </li>
+  </ul>
+</div>
+`;

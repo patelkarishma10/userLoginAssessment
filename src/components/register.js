@@ -50,11 +50,11 @@ export class Register extends Component {
                     <br />
 
                     <label htmlFor="password" >Password: </label>
-                    <input type="text" id="password" className="form-control" />
+                    <input type="password" id="password" className="form-control" />
                     <br />
 
                     <label htmlFor="password2" >password2: </label>
-                    <input type="text" id="password2" className="form-control" />
+                    <input type="password" id="password2" className="form-control" />
                     <br />
 
                     <input type="submit" className="btn btn-dark" value="register" />

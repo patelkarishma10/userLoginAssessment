@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`render a prop to register 1`] = `ShallowWrapper {}`;
+
 exports[`snapshot user list 1`] = `
 <div
   className="formDiv"

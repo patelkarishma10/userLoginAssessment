@@ -11,7 +11,7 @@ export class UserList extends Component {
             <div className="formDiv">
                 <div id="random"> </div>
                 <h2>Users</h2>
-                <Table className="formDiv">
+                <Table >
                     <tbody>
 
                         {this.props.dataSent.map((item) => (
