@@ -6,16 +6,11 @@ exports[`snapshot user list 1`] = `
 <div
   className="formDiv"
 >
-  <div
-    id="random"
-  >
-     
-  </div>
   <h2>
     Users
   </h2>
   <table
-    className="formDiv table"
+    className="table"
   >
     <tbody />
   </table>

@@ -78,7 +78,7 @@ exports[`snapshot App 1`] = `
         <input
           className="form-control"
           id="password"
-          type="text"
+          type="password"
         />
         <br />
         <label
@@ -89,7 +89,7 @@ exports[`snapshot App 1`] = `
         <input
           className="form-control"
           id="password2"
-          type="text"
+          type="password"
         />
         <br />
         <input

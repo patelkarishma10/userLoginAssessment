@@ -29,7 +29,7 @@ exports[`snapshot login 1`] = `
     <input
       className="form-control"
       id="password"
-      type="content"
+      type="password"
     />
     <br />
     <input
