@@ -39,7 +39,7 @@ export class Login extends Component {
                     <br />
 
                     <label htmlFor="password" >Password: </label>
-                    <input type="content" id="password" className="form-control" />
+                    <input type="password" id="password" className="form-control" />
                     <br />
 
                     <input type="submit" className="btn btn-dark" value="login" />
