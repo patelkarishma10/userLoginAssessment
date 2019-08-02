@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot register response 1`] = `
+<tbody>
+  <tr>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      
+    </td>
+  </tr>
+</tbody>
+`;
