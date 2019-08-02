@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot register 1`] = `
+<div
+  className="formDiv"
+>
+  <h1>
+    Register
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="username"
+    >
+      Username: 
+    </label>
+    <input
+      className="form-control"
+      id="username"
+      type="text"
+    />
+    <br />
+    <label
+      htmlFor="email"
+    >
+      Email: 
+    </label>
+    <input
+      className="form-control"
+      id="email"
+      type="text"
+    />
+    <br />
+    <label
+      htmlFor="password"
+    >
+      Password: 
+    </label>
+    <input
+      className="form-control"
+      id="password"
+      type="text"
+    />
+    <br />
+    <label
+      htmlFor="password2"
+    >
+      password2: 
+    </label>
+    <input
+      className="form-control"
+      id="password2"
+      type="text"
+    />
+    <br />
+    <input
+      className="btn btn-dark"
+      type="submit"
+      value="register"
+    />
+  </form>
+  <table
+    className="table"
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+  >
+    <tbody>
+      <tr>
+        <td />
+      </tr>
+      <tr>
+        <td />
+      </tr>
+      <tr>
+        <td />
+      </tr>
+      <tr>
+        <td />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

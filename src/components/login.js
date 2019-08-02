@@ -11,8 +11,6 @@ export class Login extends Component {
         };
     }
 
-//  {password: password}
-
     login = (e) => {
         e.preventDefault();
         let username = e.target[0].value;

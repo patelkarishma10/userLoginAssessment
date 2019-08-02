@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot login 1`] = `
+<div
+  className="formDiv"
+>
+  <h1>
+    Login
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="username"
+    >
+      Username: 
+    </label>
+    <input
+      className="form-control"
+      id="username"
+      type="text"
+    />
+    <br />
+    <label
+      htmlFor="password"
+    >
+      Password: 
+    </label>
+    <input
+      className="form-control"
+      id="password"
+      type="content"
+    />
+    <br />
+    <input
+      className="btn btn-dark"
+      type="submit"
+      value="login"
+    />
+  </form>
+  <p
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+  >
+    
+  </p>
+</div>
+`;
