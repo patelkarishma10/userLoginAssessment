@@ -1,11 +1,34 @@
 import React, { Component } from 'react';
+import axios from "axios";
 
 export class Login extends Component {
 
 
-login = (e) => {
+    constructor() {
+        super();
+        this.state = {
+            message: ""
+        };
+    }
 
-}
+//  {password: password}
+
+    login = (e) => {
+        e.preventDefault();
+        let username = e.target[0].value;
+        let password = e.target[1].value;
+         if (username === "" || password === "" ) {
+        this.setState({ message: "Please fill all fields" })
+    } else {
+        axios
+            .get("http://localhost:5000/user/name/"+ username + "/" + password )
+            .then(response => {
+                // this.setState({ message: "Successful login" });
+                console.log(response);
+            })
+            
+    }
+    }
 
     render() {
 
@@ -13,18 +36,18 @@ login = (e) => {
             <div className="formDiv">
                 <h1>Login</h1>
                 <form onSubmit={this.login}>
-                    <label htmlFor="name">Name: </label>
-                    <input type="text" id="name" className="form-control"/>
+                    <label htmlFor="username">Username: </label>
+                    <input type="text" id="username" className="form-control" />
                     <br />
 
-                    <label htmlFor="description" >Description: </label>
-                    <input type="content" id="description" className="form-control"/>
+                    <label htmlFor="password" >Password: </label>
+                    <input type="content" id="password" className="form-control" />
                     <br />
 
-                    <input type="submit" className="btn btn-dark" value="create recipe" />
+                    <input type="submit" className="btn btn-dark" value="login" />
                 </form>
 
-                {/* <p style={{color: 'red'}}>{this.state.error}</p> */}
+                 <p style={{color: 'green'}}>{this.state.message}</p> 
             </div>
 
         );
