@@ -17,7 +17,7 @@ export class UserList extends Component {
                         {this.props.dataSent.map((item) => (
 
                             <User key={item._id}
-                                passedFunction={this.props.passedFunction}
+                                
                                 username={item.username} />
 
                         ))}

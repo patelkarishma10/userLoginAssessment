@@ -13,9 +13,8 @@ export class RouterComponent extends Component {
                 <Router>
                     <NavBar />
                     <Route exact path="/" render={(props) => <Register passedFunction={this.props.onLoad} />} />
-                    {/* <Route path="/login" render={(props) => <Login passedFunction={this.props.onLoad} />} /> */}
                     <Route path="/login" component={Login} />
-                    <Route path="/userList" render={(props) => <UserList passedFunction={this.props.onLoad} dataSent={this.props.dataSent} />} />
+                    <Route path="/userList" render={(props) => <UserList dataSent={this.props.dataSent} />} />
                 </Router>
             </div>
         )
