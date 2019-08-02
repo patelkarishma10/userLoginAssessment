@@ -9,7 +9,6 @@ export class UserList extends Component {
 
         return (
             <div className="formDiv">
-                <div id="random"> </div>
                 <h2>Users</h2>
                 <Table >
                     <tbody>
