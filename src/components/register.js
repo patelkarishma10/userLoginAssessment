@@ -10,10 +10,6 @@ export class Register extends Component {
     super();
     this.state = {
         responseData: ""
-    //   username: "",
-    //   email: "",
-    //   password: "",
-    //   password2: ""
     };
   }
 
@@ -33,10 +29,6 @@ register = (e) => {
                 console.log(response);
                 this.setState({ 
                     responseData: (response.data)
-                    // username: (JSON.stringify(response.data.username)),
-                    // email: (JSON.stringify(response.data.email)),
-                    // password: (JSON.stringify(response.data.password)),
-                    // passowrd2: (JSON.stringify(response.data.password2))
                 });
                 this.props.passedFunction();
             });
@@ -44,12 +36,6 @@ register = (e) => {
 
 }
 
-// (JSON.stringify(response.data))
-// .forEach((item) => (
-
-//                                  <p>{item}</p>       
-
-//                         ))
     render() {
 
         return (
@@ -74,9 +60,6 @@ register = (e) => {
 
                     <input type="submit" className="btn btn-dark" value="register" />
                 </form>
-
-                {/* <div style={{color: 'red'}}>{this.state.error} </div>  */}
-
                 <Table style={{color: 'red'}}>
 
                         <RegisterResponse  responseData={this.state.responseData} />
