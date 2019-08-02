@@ -21,7 +21,7 @@ export class Login extends Component {
             axios
                 .get("http://localhost:5000/user/name/" + username + "/" + password)
                 .then(response => {
-                    this.setState({ message: JSON.stringify(response.data.Status) });
+                    this.setState({ message: response.data.Status });
                 })
                 .catch(err => { this.setState({ message: "username not found" }); });
 
