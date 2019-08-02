@@ -24,6 +24,7 @@ export class Login extends Component {
                 this.setState({ message:  JSON.stringify(response.data.Status) });
                 console.log(response.data);
             })
+            .catch(err => {this.setState({ message:  "username not found" });});
             
     }
     }
