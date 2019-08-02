@@ -20,13 +20,6 @@ it('snapshot router', () => {
   expect(tree).toMatchSnapshot();
 })
 
-it("render a prop to login", () => {
-    const wrapper = shallow(<Login passedFunction="[]" />);
-    expect(wrapper.instance().props.passedFunction).toEqual("[]");
-    expect(wrapper).toMatchSnapshot();
-  });
-
-
   it("render a prop to register", () => {
     const wrapper = shallow(<Register passedFunction="[]" />);
     expect(wrapper.instance().props.passedFunction).toEqual("[]");

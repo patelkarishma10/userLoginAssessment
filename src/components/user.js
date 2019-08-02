@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 export class User extends Component {
     render(props) {
 
-const { 
+        const {
     username
 } = this.props
 
         return (
 
-                        <tr>
-                            <td>{username}</td>
-                        </tr>
+            <tr>
+                <td>{username}</td>
+            </tr>
 
 
         );

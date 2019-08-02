@@ -2,8 +2,6 @@
 
 exports[`render a prop 1`] = `ShallowWrapper {}`;
 
-exports[`render a prop to login 1`] = `ShallowWrapper {}`;
-
 exports[`render a prop to register 1`] = `ShallowWrapper {}`;
 
 exports[`snapshot router 1`] = `

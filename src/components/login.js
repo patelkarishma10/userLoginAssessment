@@ -15,18 +15,17 @@ export class Login extends Component {
         e.preventDefault();
         let username = e.target[0].value;
         let password = e.target[1].value;
-         if (username === "" || password === "" ) {
-        this.setState({ message: "Please fill all fields" })
-    } else {
-        axios
-            .get("http://localhost:5000/user/name/"+ username + "/" + password )
-            .then(response => {
-                this.setState({ message:  JSON.stringify(response.data.Status) });
-                console.log(response.data);
-            })
-            .catch(err => {this.setState({ message:  "username not found" });});
-            
-    }
+        if (username === "" || password === "") {
+            this.setState({ message: "Please fill all fields" })
+        } else {
+            axios
+                .get("http://localhost:5000/user/name/" + username + "/" + password)
+                .then(response => {
+                    this.setState({ message: JSON.stringify(response.data.Status) });
+                })
+                .catch(err => { this.setState({ message: "username not found" }); });
+
+        }
     }
 
     render() {
@@ -46,7 +45,7 @@ export class Login extends Component {
                     <input type="submit" className="btn btn-dark" value="login" />
                 </form>
 
-                 <p style={{color: 'red'}}>{this.state.message}</p> 
+                <p style={{ color: 'red' }}>{this.state.message}</p>
             </div>
 
         );
